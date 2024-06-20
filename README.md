@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este é um jogo educativo desenvolvido em Flutter, projetado para ajudar os jogadores a aprenderem conceitos de endereçamento IPv4, incluindo Network ID, Broadcast e verificação de endereços IPv4 no mesmo segmento de rede. O jogo gera perguntas automaticamente com três níveis de dificuldade e armazena o score dos jogadores em uma base de dados SQLite.
+Este é um jogo educativo desenvolvido em Flutter, projetado para ajudar os jogadores a aprenderem conceitos de endereçamento IPv4, incluindo Network ID, Broadcast e verificação de endereços IPv4 no mesmo segmento de rede. O jogo gera perguntas automaticamente com três níveis de dificuldade e armazena o score dos jogadores numa base de dados SQLite.
 
 ## Funcionalidades
 
