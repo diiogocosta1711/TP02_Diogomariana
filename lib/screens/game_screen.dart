@@ -23,20 +23,19 @@ class GameScreen extends StatefulWidget {
 
 class _GameScreenState extends State<GameScreen> {
   final List<Question> questions = [
-    // Nível 1: Endereços IP /8, /16 e /24
     Question(
       questionText:
           'Qual é o Network ID do endereço IP 192.168.1.10 com máscara de sub-rede /24?',
       options: ['192.168.1.0', '192.168.1.1', '192.168.1.10', '192.168.0.0'],
       correctAnswer: '192.168.1.0',
-      difficulty: 'Nível 1',
+      difficulty: '1',
     ),
     Question(
       questionText:
           'Qual é o Broadcast do endereço IP 10.0.0.5 com máscara de sub-rede /8?',
       options: ['10.255.255.255', '10.0.0.0', '10.0.0.255', '10.0.255.255'],
       correctAnswer: '10.255.255.255',
-      difficulty: 'Nível 1',
+      difficulty: '1',
     ),
     Question(
       questionText:
@@ -46,9 +45,8 @@ class _GameScreenState extends State<GameScreen> {
         'Não, estão em redes diferentes.'
       ],
       correctAnswer: 'Sim, ambos estão na rede 172.16.0.0/16.',
-      difficulty: 'Nível 1',
+      difficulty: '1',
     ),
-    // Nível 2: Sub-redes
     Question(
       questionText:
           'Qual é o Network ID do endereço IP 192.168.1.130 com máscara de sub-rede 255.255.255.192?',
@@ -59,14 +57,14 @@ class _GameScreenState extends State<GameScreen> {
         '192.168.1.64'
       ],
       correctAnswer: '192.168.1.128',
-      difficulty: 'Nível 2',
+      difficulty: '2',
     ),
     Question(
       questionText:
           'Qual é o Broadcast do endereço IP 172.16.4.66 com máscara de sub-rede 255.255.255.240?',
       options: ['172.16.4.79', '172.16.4.0', '172.16.4.255', '172.16.4.16'],
       correctAnswer: '172.16.4.79',
-      difficulty: 'Nível 2',
+      difficulty: '2',
     ),
     Question(
       questionText:
@@ -77,15 +75,14 @@ class _GameScreenState extends State<GameScreen> {
       ],
       correctAnswer:
           'Não, 192.168.2.33 está na rede 192.168.2.32/27 e 192.168.2.65 está na rede 192.168.2.64/27.',
-      difficulty: 'Nível 2',
+      difficulty: '2',
     ),
-    // Nível 3: Super-redes
     Question(
       questionText:
           'Qual é o Network ID do endereço IP 198.51.100.14 com máscara de sub-rede 255.255.252.0?',
       options: ['198.51.100.0', '198.51.100.1', '198.51.100.14', '198.51.96.0'],
       correctAnswer: '198.51.100.0',
-      difficulty: 'Nível 3',
+      difficulty: '3',
     ),
     Question(
       questionText:
@@ -97,7 +94,7 @@ class _GameScreenState extends State<GameScreen> {
         '203.0.120.0'
       ],
       correctAnswer: '203.0.119.255',
-      difficulty: 'Nível 3',
+      difficulty: '3',
     ),
     Question(
       questionText:
@@ -107,7 +104,7 @@ class _GameScreenState extends State<GameScreen> {
         'Não, estão em redes diferentes.'
       ],
       correctAnswer: 'Sim, ambos estão na mesma rede.',
-      difficulty: 'Nível 3',
+      difficulty: '3',
     ),
   ];
 
@@ -138,7 +135,7 @@ class _GameScreenState extends State<GameScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Game Over! Your score is: $score',
+                'Game Over! O teu score é: $score',
                 style: TextStyle(fontSize: 24),
               ),
               SizedBox(height: 20),
@@ -155,7 +152,7 @@ class _GameScreenState extends State<GameScreen> {
     } else {
       return Scaffold(
         appBar: AppBar(
-          title: Text('IPv4 Game'),
+          title: Text('Jogo Mariana e Diogo'),
           actions: [
             IconButton(
               icon: Icon(Icons.leaderboard),

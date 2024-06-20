@@ -6,15 +6,14 @@ class AuthService with ChangeNotifier {
 
   static final AuthService instance = AuthService._privateConstructor();
 
-  final Map<String, dynamic> _users =
-      {}; // Alterado para Map<String, dynamic> para armazenar mais dados
+  final Map<String, dynamic> _users = {};
 
   String? _loggedInUser;
 
   String? get loggedInUser => _loggedInUser;
 
   Future<bool> login(String username, String password) async {
-    await Future.delayed(Duration(seconds: 1)); // Simulando tempo de rede
+    await Future.delayed(Duration(seconds: 1));
     if (_users.containsKey(username) &&
         _users[username]['password'] == password) {
       _loggedInUser = username;
@@ -25,12 +24,9 @@ class AuthService with ChangeNotifier {
   }
 
   Future<bool> register(String username, String password) async {
-    await Future.delayed(Duration(seconds: 1)); // Simulando tempo de rede
+    await Future.delayed(Duration(seconds: 1));
     if (!_users.containsKey(username)) {
-      _users[username] = {
-        'password': password,
-        'score': 0
-      }; // Inicializa o placar como 0
+      _users[username] = {'password': password, 'score': 0};
       return true;
     }
     return false;

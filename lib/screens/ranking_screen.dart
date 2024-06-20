@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class RankingScreen extends StatelessWidget {
   final List<Map<String, dynamic>> rankings = [
-    {'name': 'Alice', 'score': 10},
-    {'name': 'Bob', 'score': 8},
-    {'name': 'Charlie', 'score': 7},
+    {'name': 'Joao', 'score': 10},
+    {'name': 'Tiago', 'score': 8},
+    {'name': 'Raquel', 'score': 7},
   ];
 
   @override

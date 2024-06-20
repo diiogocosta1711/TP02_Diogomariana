@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => AuthService.instance,
       child: MaterialApp(
-        title: 'IPv4 Game',
+        title: 'Trabalho 02 Mariana e Diogo',
         initialRoute: '/login',
         routes: {
           '/login': (context) => LoginScreen(),
